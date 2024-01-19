@@ -579,17 +579,16 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"1SICI":[function(require,module,exports) {
-//Function för att visa meddelande och testa så javascriptkopplingen fungerar
+//Funktion för att testa så javascriptkopplingen fungerar
 function displayMessage() {
-    let message = "Hello, World!";
-    //skapa heading ellement
+    let message = "Hello World!";
+    //skapa heading element
     let heading = document.createElement("h2");
     //Specificera innehållet
     heading.textContent = message;
     //Lägga till meddelandet till body i htmldokumentet
     document.body.appendChild(heading);
 }
-//Call the displayMessage function
 displayMessage();
 
 },{}]},["iqNlW","1SICI"], "1SICI", "parcelRequire2f92")

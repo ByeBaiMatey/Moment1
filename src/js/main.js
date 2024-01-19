@@ -1,8 +1,8 @@
-//Function för att visa meddelande och testa så javascriptkopplingen fungerar
+//Funktion för att testa så javascriptkopplingen fungerar
 function displayMessage() {
-    let message = "Hello, World!";
+    let message = "Hello World!";
 
-    //skapa heading ellement
+    //skapa heading element
     let heading = document.createElement("h2");
 
     //Specificera innehållet
@@ -12,5 +12,4 @@ function displayMessage() {
     document.body.appendChild(heading);
 }
 
-//Call the displayMessage function
 displayMessage();
