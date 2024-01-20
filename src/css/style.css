@@ -5,3 +5,35 @@ body
     margin: 100px;
 }
 
+header {
+    background-color: rgb(221, 132, 15);
+    padding: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbutton {
+    text-decoration: none;
+    background-color: rgb(87, 73, 55);
+    color: rgb(256, 256, 256);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Media Query för responsivitet */
+@media screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbutton {
+        margin-top: 10px;
+    }
+}
+

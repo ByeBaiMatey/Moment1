@@ -4,4 +4,35 @@ body {
   margin: 100px;
 }
 
+header {
+  background-color: #dd840f;
+  padding: 10px;
+}
+
+.navbar {
+  justify-content: space-around;
+  display: flex;
+}
+
+.navbutton {
+  color: #fff;
+  cursor: pointer;
+  background-color: #574937;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+@media screen and (width <= 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbutton {
+    margin-top: 10px;
+  }
+}
+
 /*# sourceMappingURL=index.c92073ef.css.map */
