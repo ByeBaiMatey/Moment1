@@ -1,11 +1,12 @@
 body {
   text-align: center;
   background-color: #fddeb5;
-  margin: 100px;
+  margin: 0;
 }
 
 header {
   background-color: #dd840f;
+  width: 100%;
   padding: 10px;
 }
 
@@ -31,6 +32,8 @@ header {
   }
 
   .navbutton {
+    border-radius: 0;
+    width: 100%;
     margin-top: 10px;
   }
 }
