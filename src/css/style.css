@@ -5,18 +5,23 @@ body
     margin: 0;
 }
 
-header {
+header 
+{
     background-color: rgb(221, 132, 15);
     padding: 10px;
     width: 100%;
 }
 
-.navbar {
+.navbar 
+{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.navbutton {
+.navbutton 
+{
+    
     text-decoration: none;
     background-color: rgb(87, 73, 55);
     color: rgb(256, 256, 256);
@@ -24,6 +29,19 @@ header {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.buttons
+{
+    margin-left: auto;
+    
+}
+
+section
+{
+    width: 65ch; /*Skapar en yta för texten där radlängden inte får överstiga 65 tecken*/
+    margin: 0 auto; /*Centrerar textytan på webbsidan där texten är placerad*/
+    text-align: left; /*Texten blir vänsterjusterad inom textytan*/
 }
 
 /* Media Query för responsivitet */
@@ -34,11 +52,13 @@ header {
         align-items: center;
     }
 
-    .navbutton 
+    .navbutton, .buttons 
     {
         margin-top: 10px;
         width: 100%;
         border-radius: 0;
     }
+
+    
 }
 

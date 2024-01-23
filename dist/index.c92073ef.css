@@ -11,7 +11,8 @@ header {
 }
 
 .navbar {
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
   display: flex;
 }
 
@@ -25,13 +26,23 @@ header {
   text-decoration: none;
 }
 
+.buttons {
+  margin-left: auto;
+}
+
+section {
+  text-align: left;
+  width: 65ch;
+  margin: 0 auto;
+}
+
 @media screen and (width <= 600px) {
   .navbar {
     flex-direction: column;
     align-items: center;
   }
 
-  .navbutton {
+  .navbutton, .buttons {
     border-radius: 0;
     width: 100%;
     margin-top: 10px;
