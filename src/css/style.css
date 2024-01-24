@@ -44,6 +44,12 @@ section
     text-align: left; /*Texten blir vänsterjusterad inom textytan*/
 }
 
+img 
+{
+    width: 50%; /*Fastställer bredden som procentandel av förälderkontainern*/
+    height: auto; /*Bibehåller bildens prortioner*/
+}
+
 /* Media Query för responsivitet */
 @media screen and (max-width: 600px) {
     .navbar 

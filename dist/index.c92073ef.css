@@ -36,6 +36,11 @@ section {
   margin: 0 auto;
 }
 
+img {
+  width: 50%;
+  height: auto;
+}
+
 @media screen and (width <= 600px) {
   .navbar {
     flex-direction: column;
