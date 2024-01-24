@@ -48,6 +48,13 @@ img
 {
     width: 50%; /*Fastställer bredden som procentandel av förälderkontainern*/
     height: auto; /*Bibehåller bildens prortioner*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add a box shadow */
+    transition: box-shadow 0.3s ease; /* Add a smooth transition */
+}
+
+img:hover
+{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
 }
 
 /* Media Query för responsivitet */
