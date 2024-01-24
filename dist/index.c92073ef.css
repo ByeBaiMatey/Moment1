@@ -4,6 +4,10 @@ body {
   margin: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 header {
   background-color: #dd840f;
   width: 100%;
