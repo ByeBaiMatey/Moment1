@@ -22,19 +22,40 @@ header
 .navbutton 
 {
     
-    text-decoration: none;
+    text-decoration: none; /*Tar bort linjen under texten vid länkar*/
     background-color: rgb(87, 73, 55);
     color: rgb(256, 256, 256);
     padding: 10px 20px;
-    border: none;
+    cursor: pointer; /*Ändrar muspekaren till en hand när den förs äver en aktiv länk*/
     border-radius: 5px;
-    cursor: pointer;
+}
+
+.navbutton1
+{
+    text-decoration: none; /*Tar bort linjen under texten vid länkar*/
+    background-color: rgb(87, 73, 55);
+    color: rgb(256, 256, 256);
+    padding: 10px 20px;
+    cursor: pointer; /*Ändrar muspekaren till en hand när den förs äver en aktiv länk*/
+    border-radius: 5px;
+    margin: 0 20px 0 0;
+}
+
+.navbutton2
+{
+    text-decoration: none; /*Tar bort linjen under texten vid länkar*/
+    background-color: rgb(87, 73, 55);
+    color: rgb(256, 256, 256);
+    padding: 10px 20px;
+    cursor: pointer; /*Ändrar muspekaren till en hand när den förs äver en aktiv länk*/
+    border-radius: 5px;
+    margin: 0 20px 0 0;
 }
 
 .buttons
 {
+    display: flex;
     margin-left: auto;
-    
 }
 
 section
@@ -48,8 +69,8 @@ img
 {
     width: 50%; /*Fastställer bredden som procentandel av förälderkontainern*/
     height: auto; /*Bibehåller bildens prortioner*/
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Add a box shadow */
-    transition: box-shadow 0.3s ease; /* Add a smooth transition */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /*Skapar en skugga bakom bilden*/
+    transition: box-shadow 0.3s ease; /*En mjuk övergång vid mus-hover*/
 }
 
 img:hover
@@ -57,7 +78,7 @@ img:hover
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.9);
 }
 
-/* Media Query för responsivitet */
+/*Media Query för responsivitet*/
 @media screen and (max-width: 600px) {
     .navbar 
     {
@@ -65,11 +86,19 @@ img:hover
         align-items: center;
     }
 
-    .navbutton, .buttons 
+    .navbutton, .navbutton1, .navbutton2
     {
+        flex-direction: column;
         margin-top: 10px;
         width: 100%;
         border-radius: 0;
+    }
+
+    .buttons 
+    {
+        flex-direction: column;
+        width: 100%;
+        
     }
 
     
