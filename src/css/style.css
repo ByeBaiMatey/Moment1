@@ -29,7 +29,6 @@ header
 
 .navbutton 
 {
-    
     text-decoration: none; /*Tar bort linjen under texten vid länkar*/
     background-color: rgb(87, 73, 55);
     color: rgb(256, 256, 256);
